@@ -5,13 +5,19 @@ import java.util.Properties;
 import java.util.logging.*;
 
 public class Company {
-    public static String PATH_TO_PROPERTIES = "src/main/resources/mycompany.properties1";
+    public static String PATH_TO_PROPERTIES = "src/main/resources/mycompany.properties";
 
     private static Logger log = Logger.getLogger(Company.class.getName());
 
+    @Property(propertyName = "com.mycompany.name")
     private String myCompanyName;
+
+    @Property(propertyName = "com.mycompany.owner", defaultValue = "I am owner.")
     private String myCompanyOwner;
+
+    @Property(propertyName = "com.mycompany.address")
     private Address address;
+    
     private static Company company;
 
     private Company() {
