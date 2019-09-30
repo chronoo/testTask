@@ -2,3 +2,6 @@ target/classes/test/Address.class
 .vscode/launch.json
 target/classes/task/Address.class
 target/classes/task/App.class
+target/classes/task/Company.class
+.gitignore
+target/classes/task/Company.class
