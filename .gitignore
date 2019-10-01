@@ -6,3 +6,7 @@ target/classes/task/Company.class
 .gitignore
 target/classes/task/Company.class
 target/classes/task/Property.class
+target/classes/task/Company.class
+.vscode/settings.json
+target/test-classes/test/AppTest.class
+.settings/org.eclipse.core.resources.prefs
