@@ -1,12 +1,11 @@
 target/classes/test/Address.class
 .vscode/launch.json
-target/classes/task/Address.class
 target/classes/task/App.class
 target/classes/task/Company.class
 .gitignore
-target/classes/task/Company.class
 target/classes/task/Property.class
-target/classes/task/Company.class
 .vscode/settings.json
 target/test-classes/test/AppTest.class
 .settings/org.eclipse.core.resources.prefs
+target/classes/task/Filler.class
+src/main/java/task/PropertyManager.class
