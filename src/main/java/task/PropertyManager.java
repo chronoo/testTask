@@ -39,7 +39,9 @@ public class PropertyManager {
                         propertyValue = defaultValue;
                     }
 
-                    propertyValue = getFieldFromJSON(field, propertyValue.toString());
+                    if(propertyValue != null){
+                        propertyValue = getFieldFromJSON(field, propertyValue.toString());
+                    }
 
                     String fieldName = field.getName();
                     String setterName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
@@ -63,7 +65,7 @@ public class PropertyManager {
     }
 
     private static Object getFieldFromJSON(Field field, String property) {
-        Object propertyValue = null;
+        Object propertyValue = property;
         Class<?> fieldType = field.getType();
         if (!(fieldType == String.class || fieldType == Integer.class || fieldType == Double.class)) {
             Map<String, Object> jsonParameters = new JSONObject(property).toMap();
@@ -95,7 +97,7 @@ public class PropertyManager {
                 log.log(Level.SEVERE, "Instantiation Exception", e);
                 e.printStackTrace();
             }
-        }        
+        }    
         return propertyValue;
     }
 }
